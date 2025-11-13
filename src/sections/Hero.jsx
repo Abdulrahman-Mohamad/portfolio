@@ -1,4 +1,5 @@
 import Button from '../components/Button'
+import HeroExperience from '../components/HeroModels/HeroExperience'
 import { words } from '../constants'
 
 export default function Hero() {
@@ -16,8 +17,8 @@ export default function Hero() {
                             <h1>Shapping
                                 <span className='slide'>
                                     <span className='wrapper'>
-                                        {words.map((word) => (
-                                            <span key={word.text} className='flex items-center md:gap-3 gap-1 pb-2'>
+                                        {words.map((word, i) => (
+                                            <span key={i} className='flex items-center md:gap-3 gap-1 pb-2'>
                                                 <img
                                                     src={word.imgPath}
                                                     alt={word.text}
@@ -41,8 +42,14 @@ export default function Hero() {
                     </div>
                 </header>
                 {/* RIGHT: 3D MODEL */}
-
+                <figure>
+                    <div className='hero-3d-layout'>
+                        <HeroExperience />
+                    </div>
+                </figure>
             </div>
+
+
         </section>
     </>
 }
