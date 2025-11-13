@@ -1,3 +1,4 @@
+import AnimatedCounter from '../components/AnimatedCounter'
 import Button from '../components/Button'
 import HeroExperience from '../components/HeroModels/HeroExperience'
 import { words } from '../constants'
@@ -66,7 +67,7 @@ export default function Hero() {
                 </figure>
             </div>
 
-
+            <AnimatedCounter />
         </section>
     </>
 }
