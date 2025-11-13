@@ -1,5 +1,5 @@
-import React from 'react'
-import { words } from '../../constants'
+import Button from '../components/Button'
+import { words } from '../constants'
 
 export default function Hero() {
     return <>
@@ -32,6 +32,12 @@ export default function Hero() {
                             <h1>into Real Projects</h1>
                             <h1>that Deliver Results</h1>
                         </div>
+                        <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>Hi, I'm AbdulRahman, a Front-End developer based in Egypt with a passion for creating interactive web experiences.</p>
+                        <Button
+                            className="md:w-80 md:h-16 w-60 h-12"
+                            id='button'
+                            text="download cv"
+                        />
                     </div>
                 </header>
                 {/* RIGHT: 3D MODEL */}
