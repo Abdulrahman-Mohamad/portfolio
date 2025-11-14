@@ -1,40 +1,39 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+
 import { navLinks } from "../constants";
-import gsap from "gsap";
 
-export default function Navbar() {
-    const [scrolled, setScrolled] = useState(false)
+const NavBar = () => {
+    // track if the user has scrolled down the page
+    const [scrolled, setScrolled] = useState(false);
+
     useEffect(() => {
+        // create an event listener for when the user scrolls
         const handleScroll = () => {
+            // check if the user has scrolled down at least 10px
+            // if so, set the state to true
             const isScrolled = window.scrollY > 10;
-            if (isScrolled)
-                setScrolled(true)
-            else
-                setScrolled(false)
-        }
-        window.addEventListener('scroll', handleScroll)
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
+            setScrolled(isScrolled);
+        };
 
-    const handleScrollTo = (id) => {
-        const target = document.getElementById(id);
-        if (target) {
-            gsap.to(window, { duration: 1, scrollTo: target });
-        }
-    };
-    return <>
-        <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
+        // add the event listener to the window
+        window.addEventListener("scroll", handleScroll);
+
+        // cleanup the event listener when the component is unmounted
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
             <div className="inner">
-                <a className="logo cursor-pointer" onClick={() => handleScrollTo("hero")}>
+                <a href="#hero" className="logo">
                     AbdelRahman
                 </a>
+
                 <nav className="desktop">
                     <ul>
                         {navLinks.map(({ link, name }) => (
-                            <li key={name} className="group cursor-pointer">
-                                <a onClick={()=>handleScrollTo(link)}>
+                            <li key={name} className="group">
+                                <a href={link}>
                                     <span>{name}</span>
                                     <span className="underline" />
                                 </a>
@@ -42,12 +41,15 @@ export default function Navbar() {
                         ))}
                     </ul>
                 </nav>
+
                 <a href="#contact" className="contact-btn group">
                     <div className="inner">
-                        <span>Contact Me</span>
+                        <span>Contact me</span>
                     </div>
                 </a>
             </div>
         </header>
-    </>
+    );
 }
+
+export default NavBar;

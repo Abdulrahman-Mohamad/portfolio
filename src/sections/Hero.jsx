@@ -29,7 +29,7 @@ export default function Hero() {
 
             <div className='hero-layout'>
                 {/* LEFT: HERO CONTENT */}
-                <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
+                <header className='flex flex-col justify-center md:w-full w-screen me-auto  md:px-20 px-5'>
                     <div className='flex flex-col gap-7'>
                         <div className='hero-text'>
                             <h1>Shapping
@@ -51,7 +51,7 @@ export default function Hero() {
                             <h1>into Real Projects</h1>
                             <h1>that Deliver Results</h1>
                         </div>
-                        <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>Hi, I'm AbdulRahman, a Front-End developer based in Egypt with a passion for creating interactive web experiences.</p>
+                        <p className='text-white-50 md:text-xl relative z-10 pointer-events-none text-wrap'>Hi, I'm AbdulRahman, a Front-End developer based in Egypt <br className='hidden lg:block' />  with a passion for creating interactive web experiences.</p>
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
                             id='button'
