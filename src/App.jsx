@@ -5,6 +5,7 @@ import Hero from './sections/Hero'
 import ShowcaseSection from './sections/ShowcaseSection'
 import ExperienceSection from './sections/ExperienceSection'
 import TechStack from './sections/TechStack'
+import Testimonials from './sections/Testimonials'
 
 
 export default function App() {
@@ -16,5 +17,6 @@ export default function App() {
         <FeatureCards />
         <ExperienceSection />
         <TechStack />
+        <Testimonials />
     </>
 }
