@@ -120,10 +120,10 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
+    name: "Next Developer",
+    modelPath: "models/icons8-next.js-96.glb",
+    scale: 1.6,
+    rotation: [4.75, 3.15, 3.25],
   },
   {
     name: "Backend Developer",
