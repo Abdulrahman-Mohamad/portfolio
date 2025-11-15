@@ -6,6 +6,7 @@ import ShowcaseSection from './sections/ShowcaseSection'
 import ExperienceSection from './sections/ExperienceSection'
 import TechStack from './sections/TechStack'
 import Testimonials from './sections/Testimonials'
+import Contact from './sections/Contact'
 
 
 export default function App() {
@@ -18,5 +19,6 @@ export default function App() {
         <ExperienceSection />
         <TechStack />
         <Testimonials />
+        <Contact />
     </>
 }
