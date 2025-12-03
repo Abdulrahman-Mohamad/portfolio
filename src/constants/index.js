@@ -279,8 +279,8 @@ const myProjects = [
         tags: [
             {
                 id: 1,
-                name: "React.js",
-                path: "/images/logos/react.png",
+                name: "Next.js",
+                path: "/images/logos/nextjs.png",
             },
             {
                 id: 2,
