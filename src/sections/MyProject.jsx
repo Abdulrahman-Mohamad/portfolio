@@ -13,9 +13,16 @@ const MyProject = () => {
     const tabs = ["All", "Css", "Java Script", "React", "Next", "Full Stack", "Other"];
 
     const filteredProjects = useMemo(() => {
-        return activeTab === "All" ? myProjects : myProjects.filter(project =>
-            project.buildWith?.includes(activeTab)
-        );
+        if (activeTab === "All") return myProjects;
+        return myProjects.filter(project => {
+            const buildWith = project.buildWith;
+            if (!buildWith) return false;
+            // Handle both string and array for robustness
+            if (Array.isArray(buildWith)) {
+                return buildWith.some(item => item.toLowerCase() === activeTab.toLowerCase());
+            }
+            return String(buildWith).toLowerCase().includes(activeTab.toLowerCase());
+        });
     }, [activeTab]);
 
     useGSAP(() => {
@@ -23,6 +30,8 @@ const MyProject = () => {
         ScrollTrigger.refresh();
 
         const cards = gsap.utils.toArray(".project-card");
+
+        if (cards.length === 0) return;
 
         // Entrance animation
         gsap.fromTo(
@@ -68,7 +77,7 @@ const MyProject = () => {
                         {tab}
                     </button>
                 ))}
-            </div> 
+            </div>
 
             <div className="flex flex-col gap-8 md:flex-row pb-10 flex-wrap overflow-hidden mt-6">
                 {filteredProjects.map((project, index) => (
