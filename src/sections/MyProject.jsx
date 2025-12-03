@@ -68,7 +68,7 @@ const MyProject = () => {
                         {tab}
                     </button>
                 ))}
-            </div>
+            </div> 
 
             <div className="flex flex-col gap-8 md:flex-row pb-10 flex-wrap overflow-hidden mt-6">
                 {filteredProjects.map((project, index) => (
