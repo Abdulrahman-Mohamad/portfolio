@@ -8,13 +8,15 @@ import TechStack from './sections/TechStack'
 import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import MyProject from './sections/MyProject'
 
 
 export default function App() {
     return <>
         <Navbar />
         <Hero />
-        <ShowcaseSection />
+        {/* <ShowcaseSection /> */}
+        <MyProject/>
         <LogoSection />
         <FeatureCards />
         <ExperienceSection />

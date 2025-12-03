@@ -9,7 +9,7 @@ export default function Footer() {
                 </div>
                 <div className="socials">
                     {socialImgs.map((img) => (
-                        <a href={img.url} className="icon" target="_blank" key={img.url}>
+                        <a href={img.url} className="icon" target="_blank" key={img.name}>
                             <img src={img.imgPath} alt={img.name} />
                         </a>
                     ))}
