@@ -2,7 +2,6 @@ import LogoSection from './sections/LogoSection'
 import Navbar from './components/Navbar'
 import FeatureCards from './sections/FeatureCards'
 import Hero from './sections/Hero'
-import ShowcaseSection from './sections/ShowcaseSection'
 import ExperienceSection from './sections/ExperienceSection'
 import TechStack from './sections/TechStack'
 import Testimonials from './sections/Testimonials'
@@ -15,8 +14,7 @@ export default function App() {
     return <>
         <Navbar />
         <Hero />
-        {/* <ShowcaseSection /> */}
-        <MyProject/>
+        <MyProject />
         <LogoSection />
         <FeatureCards />
         <ExperienceSection />
