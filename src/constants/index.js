@@ -274,28 +274,28 @@ const myProjects = [
             "The application communicates with a backend API using axios with intelligent error handling and automatic retry mechanisms, providing a smooth user experience across all devices."
         ],
         href: "https://comforting-marigold-32af46.netlify.app/en",
-        spotlight: "/images/spotlight1.png",
+        spotlight: "./images/projects/sports-hub/cover.png",
         buildWith: ["Next", "Java Script"],
         tags: [
             {
                 id: 1,
                 name: "Next.js",
-                path: "/images/logos/nextjs.png",
+                path: "images/logos/tech/next.png",
             },
             {
                 id: 2,
                 name: "TailwindCSS",
-                path: "images/logos/tailwindcss.png",
+                path: "images/logos/tech/tailwindcss.png",
             },
             {
                 id: 3,
                 name: "TypeScript",
-                path: "/images/logos/typescript.png",
+                path: "images/logos/tech/ts.png",
             },
             {
                 id: 4,
                 name: "Framer Motion",
-                path: "/images/logos/framer.png",
+                path: "images/logos/tech/framerMotion.png",
             },
         ],
     },
