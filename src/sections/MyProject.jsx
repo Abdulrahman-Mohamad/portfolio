@@ -59,7 +59,7 @@ const MyProject = () => {
     }, { scope: containerRef, dependencies: [filteredProjects] });
 
     return (
-        <section id="work" className="section-padding py-20" ref={containerRef}>
+        <section id="work" className="section-padding" ref={containerRef}>
             <TitleHeader
                 title="My Selected Work"
                 sub="My Career Overview"

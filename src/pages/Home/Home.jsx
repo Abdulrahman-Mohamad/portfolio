@@ -9,13 +9,15 @@ import Contact from '../../sections/Contact'
 
 export default function Home() {
     return <>
-        <Hero />
-        <MyProject />
-        <LogoSection />
-        <FeatureCards />
-        <ExperienceSection />
-        <TechStack />
-        <Testimonials />
-        <Contact />
+        <div className='space-y-20'>
+            <Hero />
+            <MyProject />
+            <LogoSection />
+            <FeatureCards />
+            <ExperienceSection />
+            <TechStack />
+            <Testimonials />
+            <Contact />
+        </div>
     </>
 }

@@ -54,7 +54,7 @@ export default function ExperienceSection() {
     }, []);
 
     return <>
-        <section id="experience" className="w-full md:mt-40 mt:20 section-padding xl:px-0 overflow-hidden">
+        <section id="experience" className="w-full section-padding xl:px-0 overflow-hidden">
             <div className="w-full h-full md:px-20 px-5">
                 <TitleHeader
                     title="Professional Work Experience"

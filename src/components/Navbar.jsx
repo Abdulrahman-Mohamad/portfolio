@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { navLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     // track if the user has scrolled down the page
@@ -25,28 +26,29 @@ const NavBar = () => {
     return (
         <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
             <div className="inner">
-                <a href="#hero" className="logo">
+                <Link to="./" className="logo flex items-center gap-4">
+                    <img src="/favIcon.png" alt="" className="w-15" />
                     AbdelRahman
-                </a>
+                </Link>
 
                 <nav className="desktop">
                     <ul>
                         {navLinks.map(({ link, name }) => (
                             <li key={name} className="group">
-                                <a href={link}>
+                                <Link to={link}>
                                     <span>{name}</span>
                                     <span className="underline" />
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
                 </nav>
 
-                <a href="#contact" className="contact-btn group">
+                <Link to="/contact" className="contact-btn group">
                     <div className="inner">
                         <span>Contact me</span>
                     </div>
-                </a>
+                </Link>
             </div>
         </header>
     );
