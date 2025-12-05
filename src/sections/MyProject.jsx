@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const MyProject = () => {
     const containerRef = useRef(null);
     const [activeTab, setActiveTab] = useState("All");
-    const tabs = ["All", "Css", "Java Script", "React", "Next", "Full Stack", "Other"];
+    const tabs = ["All", "Css", "Java Script","Type Script", "React", "Next", "Full Stack", "Other"];
 
     const filteredProjects = useMemo(() => {
         if (activeTab === "All") return myProjects;

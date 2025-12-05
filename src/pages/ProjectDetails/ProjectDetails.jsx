@@ -78,7 +78,7 @@ export default function ProjectDetails() {
                             <p className="text-white-50 text-lg leading-relaxed mb-8">
                                 For client confidentiality, I'm not able to share the source code for this project publicly. If you would like to review how the project was built, I'd be happy to show you a private walkthrough in an online meeting. Please feel free to contact me to schedule a short session.
                             </p>
-                            <Link to="/#contact" onClick={() => setShowModal(false)} className="inline-flex items-center gap-3 px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(59,130,246,0.3)] hover:shadow-[0_0_40px_rgba(59,130,246,0.5)] transform hover:scale-105">
+                            <Link to="/contact" onClick={() => setShowModal(false)} className="inline-flex items-center gap-3 px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(59,130,246,0.3)] hover:shadow-[0_0_40px_rgba(59,130,246,0.5)] transform hover:scale-105">
                                 <span>Contact Me</span>
                             </Link>
                         </div>

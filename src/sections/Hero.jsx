@@ -52,11 +52,7 @@ export default function Hero() {
                             <h1>that Deliver Results</h1>
                         </div>
                         <p className='text-white-50 md:text-xl relative z-10 pointer-events-none text-wrap'>Hi, I'm AbdulRahman, a Front-End developer based in Egypt <br className='hidden lg:block' />  with a passion for creating interactive web experiences.</p>
-                        <Button
-                            className="md:w-80 md:h-16 w-60 h-12"
-                            id='button'
-                            text="download cv"
-                        />
+                        <Button className="md:w-80 md:h-16 w-60 h-12" text="Download CV"/>
                     </div>
                 </header>
                 {/* RIGHT: 3D MODEL */}

@@ -248,18 +248,27 @@ const socialImgs = [
     {
         name: "insta",
         imgPath: "/images/insta.png",
+        url: "https://www.instagram.com/abdulrahman_moh_93/"
     },
     {
         name: "fb",
         imgPath: "/images/fb.png",
+        url: "https://www.facebook.com/AbdulRahmanmohammed93/"
     },
     {
         name: "x",
         imgPath: "/images/x.png",
+        url: "https://x.com/AbdulRahma97784"
     },
     {
         name: "linkedin",
         imgPath: "/images/linkedin.png",
+        url: "https://www.linkedin.com/in/abdulrahman-mohamad-0578bb192/"
+    },
+    {
+        name: "Github",
+        imgPath: "/images/github.png",
+        url: "https://github.com/Abdulrahman-Mohamad"
     },
 ];
 
@@ -276,9 +285,9 @@ const myProjects = [
         ],
         href: "https://comforting-marigold-32af46.netlify.app/en",
         spotlight: "/images/projects/sports-hub/cover.png",
-        buildWith: ["Next", "Java Script"],
-        github:null,
-        figmaurl:"https://www.figma.com/design/rDcvfZxb70w6cisivBoYEc/SPORTS-HUB?node-id=0-1&t=m4BYkB6rdrI1DXw7-1",
+        buildWith: ["Next", "Type Script"],
+        github: null,
+        figmaurl: "https://www.figma.com/design/rDcvfZxb70w6cisivBoYEc/SPORTS-HUB?node-id=0-1&t=m4BYkB6rdrI1DXw7-1",
         tags: [
             {
                 id: 1,
