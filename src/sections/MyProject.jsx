@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useState, useMemo } from "react";
 import TitleHeader from "../components/TitleHeader";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,23 +113,17 @@ const MyProject = () => {
                                     ))}
                                 </div>
                             </div>
-
                             <p className="text-white-50 mb-6 line-clamp-3">
                                 {project.desc}
                             </p>
 
                             {/* CTA Button */}
-                            <a
-                                href={project.href}
-                                target="_blank"
-                                rel="noreferrer"
+                            <Link
+                                to={`/project/${project.id}`}
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-blue-600 text-white rounded-xl transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] backdrop-blur-md border border-white/10"
                             >
                                 <span>View Project</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 group-hover:translate-x-1 transition-transform">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                                </svg>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 ))}

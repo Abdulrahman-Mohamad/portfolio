@@ -265,6 +265,7 @@ const socialImgs = [
 
 const myProjects = [
     {
+        id: 1,
         title: "SPORTS HUB",
         desc: "An interactive sports gaming platform offering predictions, trivia challenges, and prizes. It provides a smooth, secure, Arabic-English experience and was built for telecom companies in Bahrain.",
         subdesc: [

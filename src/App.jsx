@@ -1,26 +1,20 @@
-import LogoSection from './sections/LogoSection'
-import Navbar from './components/Navbar'
-import FeatureCards from './sections/FeatureCards'
-import Hero from './sections/Hero'
-import ExperienceSection from './sections/ExperienceSection'
-import TechStack from './sections/TechStack'
-import Testimonials from './sections/Testimonials'
-import Contact from './sections/Contact'
-import Footer from './sections/Footer'
-import MyProject from './sections/MyProject'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from './Layout'
+import ProjectDetails from './pages/ProjectDetails/ProjectDetails'
+import Home from './pages/Home/Home'
+
+const router = createBrowserRouter([
+    {
+        path: "/", element: <Layout />, children: [
+            { index: true, element: <Home /> },
+            { path: "/project/:id", element: <ProjectDetails /> }
+        ]
+    }
+])
 
 
 export default function App() {
     return <>
-        <Navbar />
-        <Hero />
-        <MyProject />
-        <LogoSection />
-        <FeatureCards />
-        <ExperienceSection />
-        <TechStack />
-        <Testimonials />
-        <Contact />
-        <Footer />
+        <RouterProvider router={router} />
     </>
 }
