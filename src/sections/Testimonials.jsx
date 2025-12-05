@@ -4,7 +4,7 @@ import { testimonials } from "../constants";
 
 export default function Testimonials() {
     return <>
-        <section className="flex-center section-padding overflow-hidden">
+        <section id="testimonials" className="flex-center section-padding overflow-hidden">
             <div className="w-full h-full md:px-10 px-5">
                 <TitleHeader
                     title="What People Say About Me?"
