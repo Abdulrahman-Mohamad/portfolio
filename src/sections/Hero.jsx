@@ -1,5 +1,4 @@
 import AnimatedCounter from '../components/AnimatedCounter'
-import Button from '../components/Button'
 import HeroExperience from '../components/HeroModels/HeroExperience'
 import { words } from '../constants'
 import { useGSAP } from '@gsap/react'
@@ -53,7 +52,32 @@ export default function Hero() {
                             <h1>that Deliver Results</h1>
                         </div>
                         <p className='text-white-50 md:text-xl relative z-10 pointer-events-none text-wrap'>Hi, I'm AbdulRahman, a Front-End developer based in Egypt <br className='hidden lg:block' />  with a passion for creating interactive web experiences.</p>
-                        <Button className="md:w-80 md:h-16 w-60 h-12" text="Download CV"/>
+
+                        <div className='flex gap-2 items-center'>
+                            <button 
+                            onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} 
+                            className="md:w-70  w-full cta-wrapper">
+                                <div className="cta-button group">
+                                    <div className="bg-circle" />
+                                    <p className="text me-5 md:me-0">See My Work</p>
+                                    <div className="arrow-wrapper">
+                                        <img src="/images/arrow-down.svg" loading="lazy" alt="arrow" />
+                                    </div>
+                                </div>
+                            </button >
+                            <a
+                                href="/files/cv.pdf"
+                                download
+                                className="md:w-70  w-full cta-wrapper">
+                                <div className="cta-button group">
+                                    <div className="bg-circle" />
+                                    <p className="text me-5 md:me-0">Download CV</p>
+                                    <div className="arrow-wrapper">
+                                        <img src="/images/download.png" loading="lazy" alt="arrow" />
+                                    </div>
+                                </div>
+                            </a >
+                        </div>
                     </div>
                 </header>
                 {/* RIGHT: 3D MODEL */}
