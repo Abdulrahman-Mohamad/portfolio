@@ -15,7 +15,7 @@ export default function Testimonials() {
                         <GlowCard card={{ review }} key={name}>
                             <a href={url} target="_blank" className="flex items-center gap-3 relative pointer-events-auto">
                                 <div className="rounded-full overflow-hidden">
-                                    <img src={imgPath} alt={name} className="w-16 h-16" />
+                                    <img src={imgPath} alt={name} loading="lazy" className="w-16 h-16" />
                                 </div>
                                 <div>
                                     <p className="font-bold">{name}</p>

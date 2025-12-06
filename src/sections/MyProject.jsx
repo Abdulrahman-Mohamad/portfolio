@@ -94,6 +94,7 @@ const MyProject = () => {
                             <img
                                 src={project.spotlight}
                                 alt={project.title}
+                                loading="lazy"
                                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                             />
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
@@ -108,7 +109,7 @@ const MyProject = () => {
                                 <div className="flex gap-2">
                                     {project.tags.map((tag) => (
                                         <div key={tag.id} className="w-8 h-8 rounded-full bg-black/50 flex items-center justify-center border border-white/10 p-1.5" title={tag.name}>
-                                            <img src={tag.path} alt={tag.name} className="w-full h-full object-contain" />
+                                            <img src={tag.path} alt={tag.name} loading="lazy" className="w-full h-full object-contain" />
                                         </div>
                                     ))}
                                 </div>

@@ -66,7 +66,7 @@ export default function ExperienceSection() {
                         <div className="xl:w-2/6">
                            <GlowCard card={card} index={index}>
                               <div className="">
-                                 <img src={card.imgPath} alt={card.title} className="w-40" />
+                                 <img src={card.imgPath} alt={card.title} loading="lazy" className="w-40" />
                               </div>
                            </GlowCard>
                         </div>
@@ -78,7 +78,7 @@ export default function ExperienceSection() {
                               </div>
                               <div className="exp-text flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                                  <div className="timeline-logo md:p-3.5">
-                                    <img src={card.logoPath} alt="logo" className="w-full h-full " />
+                                    <img src={card.logoPath} alt="logo" loading="lazy" className="w-full h-full " />
                                  </div>
                                  <div>
                                     <h1 className="font-semibold text-3xl">{card.title}</h1>

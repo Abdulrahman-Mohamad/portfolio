@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="socials">
                     {socialImgs.map((img) => (
                         <a href={img.url} className="icon" target="_blank" key={img.name}>
-                            <img src={img.imgPath} alt={img.name} className="max-w-6" />
+                            <img src={img.imgPath} alt={img.name} loading="lazy" className="max-w-6" />
                         </a>
                     ))}
                 </div>

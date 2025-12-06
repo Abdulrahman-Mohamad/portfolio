@@ -40,7 +40,7 @@ const NavBar = () => {
         <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"} z-40`}>
             <div className="inner ">
                 <Link to="./" className="logo flex items-center gap-4">
-                    <img src="/favIcon.png" alt="" className="w-15" />
+                    <img src="/favIcon.png" loading="lazy" alt="" className="w-15" />
                     AbdelRahman
                 </Link>
 
@@ -65,7 +65,7 @@ const NavBar = () => {
 
                 <div className=" lg:hidden">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        <img src={isMenuOpen ? "images/x.svg" : "images/menu.svg"} alt="" />
+                        <img src={isMenuOpen ? "images/x.svg" : "images/menu.svg"} loading="lazy" alt="" />
                     </button>
                 </div>
             </div>
@@ -80,7 +80,7 @@ const NavBar = () => {
                 <div className="flex flex-col h-full space-y-10">
                     <div ref={(el) => (menuItemsRef.current[0] = el)} className="text-white-50 text-xl font-semibold flex items-center gap-4">
                         <Link to="./" className="flex items-center gap-4" onClick={handleCloseMenu}>
-                            <img src="/favIcon.png" alt="" className="w-15" />
+                            <img src="/favIcon.png" alt="" loading="lazy" className="w-15" />
                             AbdelRahman
                         </Link>
                     </div>

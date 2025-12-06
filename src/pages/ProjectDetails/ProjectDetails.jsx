@@ -70,7 +70,7 @@ export default function ProjectDetails() {
                         {/* Modal content */}
                         <div className="flex flex-col items-center text-center">
                             <div className="w-16 h-16 mb-6 rounded-full bg-white/10 flex items-center justify-center">
-                                <img src="/images/github.png" alt="GitHub" className="w-10 h-10" />
+                                <img src="/images/github.png" alt="GitHub" loading="lazy" className="w-10 h-10" />
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                                 Client Confidentiality
@@ -99,7 +99,7 @@ export default function ProjectDetails() {
 
                     {/* Project Image */}
                     <div className="hero-image relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden mb-8">
-                        <img src={project.spotlight} alt={project.title} className="w-full h-full object-cover" />
+                        <img src={project.spotlight} loading="lazy" alt={project.title} className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
                     </div>
 
@@ -116,7 +116,7 @@ export default function ProjectDetails() {
                         <div className="flex flex-wrap gap-3 mb-8">
                             {project.tags.map((tag) => (
                                 <div key={tag.id} className="flex items-center gap-2 px-4 py-2 bg-black/50 backdrop-blur-md rounded-full border border-white/10 hover:border-white/30 transition-all duration-300">
-                                    <img src={tag.path} alt={tag.name} className="w-6 h-6 object-contain" />
+                                    <img src={tag.path} loading="lazy" alt={tag.name} className="w-6 h-6 object-contain" />
                                     <span className="text-white-50 text-sm font-medium">{tag.name}</span>
                                 </div>
                             ))}
@@ -131,13 +131,13 @@ export default function ProjectDetails() {
                             )}
 
                             <a href={project.github || "#"} target="_blank" rel="noopener noreferrer" onClick={handleGitHubClick} className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all duration-300 backdrop-blur-md border border-white/10 hover:border-white/30 transform hover:scale-105 cursor-pointer">
-                                <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
+                                <img src="/images/github.png" loading="lazy" alt="GitHub" className="w-5 h-5" />
                                 <span>GitHub</span>
                             </a>
 
                             {project.figmaurl && (
                                 <a href={project.figmaurl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all duration-300 backdrop-blur-md border border-white/10 hover:border-white/30 transform hover:scale-105">
-                                    <img src="/images/figma.png" alt="Figma" className="w-5 h-5" />
+                                    <img src="/images/figma.png" loading="lazy" alt="Figma" className="w-5 h-5" />
                                     <span>Figma</span>
                                 </a>
                             )}
@@ -184,7 +184,7 @@ export default function ProjectDetails() {
                     {project.tags.map((tag) => (
                         <div key={tag.id} className="tech-badge bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group cursor-pointer">
                             <div className="w-16 h-16 flex items-center justify-center">
-                                <img src={tag.path} alt={tag.name} className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-300" />
+                                <img src={tag.path} loading="lazy" alt={tag.name} className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-300" />
                             </div>
                             <span className="text-white text-center font-medium">
                                 {tag.name}
@@ -203,13 +203,13 @@ export default function ProjectDetails() {
                 )}
 
                 <a href={project.github || "#"} target="_blank" rel="noopener noreferrer" onClick={handleGitHubClick} className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all duration-300 backdrop-blur-md border border-white/10 hover:border-white/30 transform hover:scale-105 cursor-pointer">
-                    <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
+                    <img src="/images/github.png" alt="GitHub" loading="lazy" className="w-5 h-5" />
                     <span>GitHub</span>
                 </a>
 
                 {project.figmaurl && (
                     <a href={project.figmaurl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all duration-300 backdrop-blur-md border border-white/10 hover:border-white/30 transform hover:scale-105">
-                        <img src="/images/figma.png" alt="Figma" className="w-5 h-5" />
+                        <img src="/images/figma.png" loading="lazy" alt="Figma" className="w-5 h-5" />
                         <span>Figma</span>
                     </a>
                 )}
