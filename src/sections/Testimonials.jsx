@@ -11,17 +11,21 @@ export default function Testimonials() {
                     sub="⭐️ Client feedback highlights"
                 />
                 <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
-                    {testimonials.map(({ imgPath, name, mentions, review }) => (
+                    {testimonials.map(({ imgPath, name, url, review }) => (
                         <GlowCard card={{ review }} key={name}>
-                            <div className="flex items-center gap-3">
-                                <div>
-                                    <img src={imgPath} alt={name} />
+                            <a
+                            href={url}
+                            target="_blank"
+                            className="flex items-center gap-3 relative z-50 pointer-events-auto"
+                            onClick={(e) => e.stopPropagation()} // Prevent GlowCard's click handler if any
+                            >
+                                <div className="rounded-full overflow-hidden">
+                                    <img src={imgPath} alt={name} className="w-16 h-16" />
                                 </div>
                                 <div>
                                     <p className="font-bold">{name}</p>
-                                    <p className="text-white-50">{mentions}</p>
                                 </div>
-                            </div>
+                            </a>
                         </GlowCard>
                     ))}
                 </div>

@@ -189,47 +189,42 @@ const expLogos = [
 // Testimonials Reviews
 const testimonials = [
     {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
-        review:
-            "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-        imgPath: "/images/client1.png",
+        name: "Caducs Ltd",
+        url: "https://caducs.com/",
+        review: "AbdelRahman built and led the programming department from scratch, ensuring top-quality project delivery. His leadership and problem-solving skills made our collaboration seamless.",
+        imgPath: "/images/client1.jpg",
     },
     {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
-        review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-        imgPath: "/images/client3.png",
+        name: "MBITION",
+        url: "https://mbition.io/",
+        review: "Working with AbdelRahman was fantastic. He developed Mercedes-Benz web interfaces, improving performance and user experience significantly. Highly recommend him for complex projects.",
+        imgPath: "/images/mbition.png",
     },
     {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
-        review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        imgPath: "/images/client2.png",
+        name: "Emil Frek Digital",
+        url: "https://emilfreydigital.com/",
+        review: "Collaborating with AbdelRahman on Emil Frey Digital platforms was a pleasure. His modern UI/UX designs and SEO improvements increased traffic and overall digital performance.",
+        imgPath: "/images/emil.png",
     },
     {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
-        review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-        imgPath: "/images/client5.png",
+        name: "Ahmed Abdelfattah",
+        url: "https://www.linkedin.com/in/ahmed-abdelfattah-8b061432/",
+        review: "Working with AbdelRahman was a pleasure. He consistently delivered high-quality work, showed great attention to detail, and collaborated effectively with the team. His contributions significantly improved our projects and client satisfaction.",
+        imgPath: "/images/Ahmed Abdelfattah.jfif",
     },
     {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
-        review:
-            "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-        imgPath: "/images/client4.png",
+        name: "Ahmed Hossam",
+        url: "https://www.linkedin.com/in/comp-eng-ahmed-hossam/",
+        review: "AbdelRahman’s work on Mercedes-Benz and Emil Frey platforms boosted performance and responsiveness significantly, creating outstanding user experiences.",
+        imgPath: "/images/Ahmed Hossam.jfif",
     },
     {
-        name: "Albert Flores",
-        mentions: "@albertflores",
-        review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-        imgPath: "/images/client6.png",
+        name: "Nikola Novakovic",
+        url: "https://www.linkedin.com/in/nikola-novakovic-9187664/?originalSubdomain=hr",
+        review: "AbdelRahman demonstrated strong leadership and technical expertise, delivering multiple projects successfully and improving digital platforms' usability and traffic.",
+        imgPath: "/images/Nikola Novakovic.jfif",
     },
+
 ];
 
 // Footer Social Links
