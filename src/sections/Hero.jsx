@@ -6,20 +6,9 @@ import gsap from 'gsap'
 
 export default function Hero() {
     useGSAP(() => {
-        gsap.fromTo('.hero-text h1',
-            {
-                y: 50,
-                opacity: 0
-            },
-            {
-                y: 0,
-                opacity: 1,
-                stagger: 0.2,
-                duration: 1,
-                ease: "power2.inOut"
-            }
-        )
+        gsap.fromTo('.hero-text h1', { y: 50, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" })
     })
+    
     return <>
         <section id='hero' className='relative overflow-hidden'>
             <div className='absolute z-10'>
@@ -54,9 +43,9 @@ export default function Hero() {
                         <p className='text-white-50 md:text-xl relative z-10 pointer-events-none text-wrap'>Hi, I'm AbdulRahman, a Front-End developer based in Egypt <br className='hidden lg:block' />  with a passion for creating interactive web experiences.</p>
 
                         <div className='flex gap-2 items-center'>
-                            <button 
-                            onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} 
-                            className="md:w-70  w-full cta-wrapper">
+                            <button
+                                onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
+                                className="md:w-70  w-full cta-wrapper">
                                 <div className="cta-button group">
                                     <div className="bg-circle" />
                                     <p className="text me-5 md:me-0">See My Work</p>

@@ -99,7 +99,7 @@ const Contact = () => {
                                         <p className="text">
                                             {loading ? "Sending..." : "Send Message"}
                                         </p>
-                                        <div className="arrow-wrapper">
+                                        <div className="arrow-wrapper -rotate-90">
                                             <img src="/images/arrow-down.svg" loading="lazy" alt="arrow" />
                                         </div>
                                     </div>

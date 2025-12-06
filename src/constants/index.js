@@ -234,6 +234,11 @@ const testimonials = [
 // Footer Social Links
 const socialImgs = [
     {
+        name: "whats",
+        imgPath: "/images/whatsapp.png",
+        url: "https://wa.me/201013977924"
+    },
+    {
         name: "insta",
         imgPath: "/images/insta.png",
         url: "https://www.instagram.com/abdulrahman_moh_93/"
