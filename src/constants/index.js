@@ -1,3 +1,4 @@
+// Navigation Links in Navbar
 const navLinks = [
     {
         name: "Work",
@@ -17,6 +18,7 @@ const navLinks = [
     },
 ];
 
+// Words (Animated) in Hero Section
 const words = [
     { text: "Ideas", imgPath: "/images/ideas.svg" },
     { text: "Concepts", imgPath: "/images/concepts.svg" },
@@ -28,6 +30,7 @@ const words = [
     { text: "Code", imgPath: "/images/code.svg" },
 ];
 
+// Counter Items
 const counterItems = [
     { value: 6, suffix: "+", label: "Years of Experience" },
     { value: 42, suffix: "+", label: "Satisfied Clients" },
@@ -35,6 +38,7 @@ const counterItems = [
     { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
+// Logo Icons List (Animated)
 const logoIconsList = [
     {
         imgPath: "/images/logos/company-logo-1.png",
@@ -71,6 +75,7 @@ const logoIconsList = [
     },
 ];
 
+// Abilities
 const abilities = [
     {
         imgPath: "/images/seo.png",
@@ -89,29 +94,7 @@ const abilities = [
     },
 ];
 
-const techStackImgs = [
-    {
-        name: "React Developer",
-        imgPath: "/images/logos/react.png",
-    },
-    {
-        name: "Python Developer",
-        imgPath: "/images/logos/python.svg",
-    },
-    {
-        name: "Backend Developer",
-        imgPath: "/images/logos/node.png",
-    },
-    {
-        name: "Interactive Developer",
-        imgPath: "/images/logos/three.png",
-    },
-    {
-        name: "Project Manager",
-        imgPath: "/images/logos/git.svg",
-    },
-];
-
+// Tech Stack Icons (3D Models)
 const techStackIcons = [
     {
         name: "React Developer",
@@ -145,45 +128,49 @@ const techStackIcons = [
     },
 ];
 
+// Experience Cards
 const expCards = [
     {
-        review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-        imgPath: "/images/exp1.png",
-        logoPath: "/images/logo1.png",
+        review: "AbdelRahman showed remarkable leadership in building our programming department from scratch. His planning skills, team management, and consistent delivery made him a key contributor to our success and client satisfaction.",
+        imgPath: "/images/caducs-name.png",
+        logoPath: "/images/caducs.png",
+        title: "Head of Programming",
+        date: "Jun 2023 - July 2025",
+        responsibilities: [
+            "Established and led the Programming Department from scratch.",
+            "Managed all software projects and ensured on-time, high-quality delivery.",
+            "Supervised developers, assigned tasks, and reviewed work.",
+            "Coordinated with clients and translated requirements into clear plans.",
+            "Ensured 95%+ client satisfaction through strong project execution.",
+        ],
+    },
+    {
+        review: "AbdelRahman delivered impactful UX improvements and performance gains for Mercedes-Benz platforms, achieving measurable responsiveness upgrades across web and in-car interfaces.",
+        imgPath: "/images/mbition-name.svg",
+        logoPath: "/images/mbition.png",
         title: "Frontend Developer",
-        date: "January 2023 - Present",
+        date: " Jan 2021 – Apr 2023",
         responsibilities: [
-            "Developed and maintained user-facing features for the Hostinger website.",
-            "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-            "Optimized web applications for maximum speed and scalability.",
+            "Developed Mercedes-Benz web interfaces, enhancing digital experiences.",
+            "Optimized in-car and web platforms, performance and responsiveness.",
+            "Boosted performance by 40%+ through optimization and responsive design.",
         ],
     },
     {
-        review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-        imgPath: "/images/exp2.png",
-        logoPath: "/images/logo2.png",
-        title: "Full Stack Developer",
-        date: "June 2020 - December 2023",
+        review: "AbdelRahman delivered multiple high-quality platforms for Emil Frey Digital, combining modern UI/UX with measurable SEO improvements that increased organic traffic and strengthened overall digital performance.",
+        imgPath: "/images/Emil-name.svg",
+        logoPath: "/images/emil.png",
+        title: "Frontend Developer",
+        date: "Jan 2020 – Nov 2020",
         responsibilities: [
-            "Led the development of Docker's web applications, focusing on scalability.",
-            "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-            "Contributed to open-source projects that were used with the Docker ecosystem.",
-        ],
-    },
-    {
-        review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-        imgPath: "/images/exp3.png",
-        logoPath: "/images/logo3.png",
-        title: "React Native Developer",
-        date: "March 2019 - May 2020",
-        responsibilities: [
-            "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-            "Improved app performance and user experience through code optimization and testing.",
-            "Coordinated with the product team to implement features based on feedback.",
+            "Delivered Emil Frey Digital site plus 5 web platforms.",
+            "Built modern UI/UX with React.js and Material UI.",
+            "Improved SEO, raising organic traffic by 25%.",
         ],
     },
 ];
 
+// Experience Logos
 const expLogos = [
     {
         name: "logo1",
@@ -199,6 +186,7 @@ const expLogos = [
     },
 ];
 
+// Testimonials Reviews
 const testimonials = [
     {
         name: "Esther Howard",
@@ -244,6 +232,7 @@ const testimonials = [
     },
 ];
 
+// Footer Social Links
 const socialImgs = [
     {
         name: "insta",
@@ -272,6 +261,7 @@ const socialImgs = [
     },
 ];
 
+// My Projects
 const myProjects = [
     {
         id: 1,
@@ -323,7 +313,6 @@ export {
     testimonials,
     socialImgs,
     techStackIcons,
-    techStackImgs,
     navLinks,
     myProjects,
 };
