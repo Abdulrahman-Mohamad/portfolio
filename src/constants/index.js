@@ -1,6 +1,10 @@
 // Navigation Links in Navbar
 const navLinks = [
     {
+        name: "Home",
+        link: "/",
+    },
+    {
         name: "Work",
         link: "/work",
     },

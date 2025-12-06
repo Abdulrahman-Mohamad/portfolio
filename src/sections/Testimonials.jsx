@@ -10,7 +10,7 @@ export default function Testimonials() {
                     title="What People Say About Me?"
                     sub="⭐️ Client feedback highlights"
                 />
-                <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
+                <div className="lg:columns-3 md:columns-2 columns-1 mt-16 z-0">
                     {testimonials.map(({ imgPath, name, url, review }) => (
                         <GlowCard card={{ review }} key={name}>
                             <a href={url} target="_blank" className="flex items-center gap-3 relative pointer-events-auto">
