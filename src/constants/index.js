@@ -305,6 +305,44 @@ const myProjects = [
             },
         ],
     },
+    {
+        id: 2,
+        title: "AI Resume Analyzer",
+        desc: "AI-powered resume analyzer that delivers instant feedback, highlights strengths, improves weak points, and boosts interview chances—with a fast, professional experience across all devices.",
+        subdesc: [
+            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
+            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
+            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
+            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device."
+        ],
+        href: "https://graceful-malasada-6d8ee5.netlify.app/",
+        spotlight: "/images/projects/ai-resume-analyzer/ai-resume-analyzer.png",
+        buildWith: ["React", "Java Script"],
+        github: "https://github.com/Abdulrahman-Mohamad/ai-resume-analyzer.git",
+        figmaurl: "https://www.figma.com/design/1ORO8ueSeJM8nyOUNDWHbf/AI-Resume-Analyzer?node-id=0-1&t=JPP4G0qP8QEcO0x7-1",
+        tags: [
+            {
+                id: 1,
+                name: "React Router",
+                path: "/images/logos/tech/react-router.png",
+            },
+            {
+                id: 2,
+                name: "TailwindCSS",
+                path: "/images/logos/tech/tailwindcss.png",
+            },
+            {
+                id: 3,
+                name: "JavaScript",
+                path: "/images/logos/tech/js.png",
+            },
+            {
+                id: 4,
+                name: "gsap",
+                path: "/images/logos/tech/gsap.png",
+            },
+        ],
+    },
 ];
 
 export {
