@@ -341,6 +341,39 @@ const myProjects = [
                 name: "gsap",
                 path: "/images/logos/tech/gsap.png",
             },
+            {
+                id: 5,
+                name: "Puter",
+                path: "/images/logos/tech/puter.png",
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: "3D Rotate",
+        desc: "A visually immersive 3D product showcase built entirely with pure CSS, featuring interactive animations and parallax effects. It demonstrates the power of modern web styling by delivering a photorealistic rotating soda can experience without any JavaScript dependencies.",
+        subdesc: [
+            "The project showcases a realistic 3D rotating soda can effect that allows users to interactively switch product labels on hover, creating a dynamic and engaging visual experience.",
+            "Built exclusively with HTML5 and Vanilla CSS, it utilizes advanced techniques such as mask-image and background-blend-mode to render complex textures and lighting effects directly in the browser.",
+            "It leverages the modern :has() CSS selector to orchestrate environment animations, causing background elements to react and move in parallax when the user interacts with the main product.",
+            "Designed with a responsive architecture, it ensures smooth, hardware-accelerated performance and adapts its layout and asset sizing seamlessly across desktop and mobile devices."
+        ],
+        href: "https://3drotate.netlify.app/",
+        spotlight: "/images/projects/3drotate/3d-rotate.png",
+        buildWith: ["Css"],
+        github: "https://github.com/Abdulrahman-Mohamad/3dRotate.git",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
         ],
     },
 ];
