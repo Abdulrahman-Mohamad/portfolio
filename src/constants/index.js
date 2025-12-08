@@ -267,6 +267,7 @@ const socialImgs = [
 
 // My Projects
 const myProjects = [
+    // Project 1 [SPORTS HUB]
     {
         id: 1,
         title: "SPORTS HUB",
@@ -305,6 +306,7 @@ const myProjects = [
             },
         ],
     },
+    // Project 2 [Ai Resume Analyzer]
     {
         id: 2,
         title: "AI Resume Analyzer",
@@ -348,6 +350,7 @@ const myProjects = [
             },
         ],
     },
+    // Project 3 [3D Rotate]
     {
         id: 3,
         title: "3D Rotate",
@@ -362,6 +365,35 @@ const myProjects = [
         spotlight: "/images/projects/3drotate/3d-rotate.png",
         buildWith: ["Css"],
         github: "https://github.com/Abdulrahman-Mohamad/3dRotate.git",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
+    // Project 4 [Animate SVG]
+    {
+        id: 4,
+        title: "Animate SVG",
+        desc: "A captivating visual landing page that combines cinematic background animations with elegant SVG path drawing effects. It creates a dramatic entrance for the brand by synchronizing a “zoom-in/zoom-out” parallax environment with a self-drawing logo.",
+        subdesc: [
+            "The project features a sophisticated SVG line-drawing animation that simulates a handwritten signature effect using CSS stroke-dashoffset and fill transitions.",
+            "It creates a cinematic depth of field by layering background images with opposing scale animations, where the background zooms in while the foreground overlay zooms out.",
+            "Built entirely with HTML5 and CSS3, it demonstrates high-performance visual storytelling techniques and complex keyframe animations without relying on JavaScript libraries.",
+            "The design focuses on a dramatic user entrance, seamlessly transitioning the logo from a delicate traced outline to a bold, solid white fill."
+        ],
+        href: "https://nimble-sable-72e976.netlify.app/",
+        spotlight: "/images/projects/animate-svg/animate-svg.PNG",
+        buildWith: ["Css"],
+        github: "https://github.com/Abdulrahman-Mohamad/animateSVG.git",
         figmaurl: null,
         tags: [
             {
