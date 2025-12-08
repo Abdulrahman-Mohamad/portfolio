@@ -637,6 +637,35 @@ const myProjects = [
             }
         ],
     },
+    // Project 12 [Hong Kong]
+    {
+        id: 12,
+        title: "Slideer-3D",
+        desc: "A mesmerizing 3D rotating image carousel built entirely with CSS, creating a spatial \"ring\" of images that spins in a continuous loop. It demonstrates the power of CSS 3D transforms to create immersive, hardware-accelerated animations without any JavaScript.",
+        subdesc: [
+            "The project utilizes CSS 3D Transforms (perspective, rotateY, translateZ) to position images in a perfect circle around a central axis, creating a true 3D carousel effect.",
+            "It features a continuous, smooth rotation animation (autoRun) that spins the entire 3D stage, allowing users to view all items in the collection as they pass by.",
+            "The design includes a clever depth-layering technique where a central 'model' image is sandwiched between the background text and the rotating slider, creating a dynamic sense of depth.",
+            "Typography is styled with 'ICA Rubrik' and includes a unique text-stroke effect (-webkit-text-stroke) on the main heading, allowing the background elements to be partially visible through the text."
+        ],
+        href: "https://slider-3d-gamma.vercel.app/",
+        spotlight: "/images/projects/slider-3d/slider-3d.png",
+        buildWith: ["Css"],
+        github: "https://github.com/Abdulrahman-Mohamad/slider-3d.git",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
 
 ];
 
