@@ -267,9 +267,54 @@ const socialImgs = [
 
 // My Projects
 const myProjects = [
-    // Project 1 [SPORTS HUB]
+    // Project 1 [Hong Kong]
     {
         id: 1,
+        title: "Mac Portfolio",
+        desc: "A highly interactive and creative personal portfolio website designed to replicate the macOS desktop experience directly in the browser. It features a fully functional dock, draggable windows, and a simulated file system interface to showcase projects, skills, and blog posts in an engaging and memorable way.",
+        subdesc: [
+            "Built with React 19 and Vite for blazing-fast performance, and styled with Tailwind CSS v4 to achieve a modern, pixel-perfect macOS aesthetic.",
+            "It leverages GSAP (GreenSock Animation Platform) and its Draggable plugin to power complex animations, enabling smooth window dragging, resizing, and dynamic dock interactions.",
+            "The application utilizes Zustand for robust global state management, efficiently handling the opening, closing, and z-index layering of multiple concurrent 'apps' like Finder, Terminal, and Safari.",
+            "Features a simulated file system within the 'Finder' app, allowing users to navigate through folders to discover detailed project case studies, view a PDF resume, and explore a photo gallery."
+        ],
+        href: "https://mac-portfolio-jade.vercel.app/",
+        spotlight: "/images/projects/mac-portfolio/mac-portfolio.png",
+        buildWith: ["React", "Java Script"],
+        github: "https://github.com/Abdulrahman-Mohamad/mac-portfolio.git",
+        figmaurl: "https://www.figma.com/design/TyPLi9MtOJ7pKw0xZqBO79/Untitled?node-id=0-1&t=01UEWainr5Psmvlp-1",
+        tags: [
+            {
+                id: 1,
+                name: "React",
+                path: "/images/logos/tech/react.png",
+            },
+            {
+                id: 2,
+                name: "TailwindCSS",
+                path: "/images/logos/tech/tailwindcss.png",
+            },
+            {
+                id: 3,
+                name: "JavaScript",
+                path: "/images/logos/tech/js.png",
+            },
+            {
+                id: 4,
+                name: "gsap",
+                path: "/images/logos/tech/gsap.png",
+            },
+            {
+                id: 5,
+                name: "zustand",
+                path: "/images/logos/tech/zustand.png",
+            },
+            
+        ],
+    },
+    // Project 2 [SPORTS HUB]
+    {
+        id: 2,
         title: "SPORTS HUB",
         desc: "An interactive sports gaming platform offering predictions, trivia challenges, and prizes. It provides a smooth, secure, Arabic-English experience and was built for telecom companies in Bahrain.",
         subdesc: [
@@ -306,9 +351,9 @@ const myProjects = [
             },
         ],
     },
-    // Project 2 [Ai Resume Analyzer]
+    // Project 3 [Ai Resume Analyzer]
     {
-        id: 2,
+        id: 3,
         title: "AI Resume Analyzer",
         desc: "AI-powered resume analyzer that delivers instant feedback, highlights strengths, improves weak points, and boosts interview chances—with a fast, professional experience across all devices.",
         subdesc: [
@@ -350,7 +395,7 @@ const myProjects = [
             },
         ],
     },
-    // Project 3 [3D Rotate]
+    // Project 4 [4D Rotate]
     {
         id: 3,
         title: "3D Rotate",
@@ -379,9 +424,9 @@ const myProjects = [
             }
         ],
     },
-    // Project 4 [Animate SVG]
+    // Project 5 [Animate SVG]
     {
-        id: 4,
+        id: 5,
         title: "Animate SVG",
         desc: "A captivating visual landing page that combines cinematic background animations with elegant SVG path drawing effects. It creates a dramatic entrance for the brand by synchronizing a “zoom-in/zoom-out” parallax environment with a self-drawing logo.",
         subdesc: [
@@ -408,9 +453,9 @@ const myProjects = [
             }
         ],
     },
-    // Project 5 [Auto Slider]
+    // Project 6 [Auto Slider]
     {
-        id: 5,
+        id: 6,
         title: "Auto Slider",
         desc: "A seamless, infinite scrolling image slider built entirely with HTML and CSS, featuring bidirectional animation support. It creates a dynamic visual flow where images continuously loop across the screen, offering an interactive user experience with pause-on-hover functionality.",
         subdesc: [
@@ -437,9 +482,9 @@ const myProjects = [
             }
         ],
     },
-    // Project 6 [Spider Animation]
+    // Project 7 [Spider Animation]
     {
-        id: 6,
+        id: 7,
         title: "Spider Animation",
         desc: "An interactive web animation that simulates a dynamic spider web effect using HTML5 Canvas and JavaScript. It features a network of particles that react to mouse movement, creating connections in real time to visualize proximity and interaction.",
         subdesc: [
@@ -471,9 +516,9 @@ const myProjects = [
             }
         ],
     },
-    // Project 7 [Hong Kong]
+    // Project 8 [Hong Kong]
     {
-        id: 7,
+        id: 8,
         title: "Hong Kong",
         desc: "An immersive scrolling experience that uses GSAP ScrollTrigger to animate a detailed vector city illustration. As the user scrolls, the view zooms into the architecture, peeling away layers of the building to reveal the interior, creating a dynamic storytelling effect.",
         subdesc: [
@@ -505,6 +550,7 @@ const myProjects = [
             }
         ],
     },
+    
 ];
 
 export {
