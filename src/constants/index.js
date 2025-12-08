@@ -411,7 +411,7 @@ const myProjects = [
     // Project 5 [Auto Slider]
 
     {
-        id: 4,
+        id: 5,
         title: "Auto Slider",
         desc: "A seamless, infinite scrolling image slider built entirely with HTML and CSS, featuring bidirectional animation support. It creates a dynamic visual flow where images continuously loop across the screen, offering an interactive user experience with pause-on-hover functionality.",
         subdesc: [
