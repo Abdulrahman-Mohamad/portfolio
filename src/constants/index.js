@@ -278,7 +278,7 @@ const myProjects = [
             "It relies on an advanced authentication system featuring JWT tokens and OTP verification, with state management handled via React Context.",
             "The application communicates with a backend API using axios with intelligent error handling and automatic retry mechanisms, providing a smooth user experience across all devices."
         ],
-        href: "https://comforting-marigold-32af46.netlify.app/en",
+        href: "https://kasseb-website.vercel.app/en",
         spotlight: "/images/projects/sports-hub/cover.png",
         buildWith: ["Next", "Type Script"],
         github: null,
@@ -317,7 +317,7 @@ const myProjects = [
             "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
             "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device."
         ],
-        href: "https://graceful-malasada-6d8ee5.netlify.app/",
+        href: "https://ai-resume-analyzer-one-gold.vercel.app/",
         spotlight: "/images/projects/ai-resume-analyzer/ai-resume-analyzer.png",
         buildWith: ["React", "Java Script"],
         github: "https://github.com/Abdulrahman-Mohamad/ai-resume-analyzer.git",
@@ -361,7 +361,7 @@ const myProjects = [
             "It leverages the modern :has() CSS selector to orchestrate environment animations, causing background elements to react and move in parallax when the user interacts with the main product.",
             "Designed with a responsive architecture, it ensures smooth, hardware-accelerated performance and adapts its layout and asset sizing seamlessly across desktop and mobile devices."
         ],
-        href: "https://3drotate.netlify.app/",
+        href: "https://3d-rotate-lilac.vercel.app/",
         spotlight: "/images/projects/3drotate/3d-rotate.png",
         buildWith: ["Css"],
         github: "https://github.com/Abdulrahman-Mohamad/3dRotate.git",
@@ -390,7 +390,7 @@ const myProjects = [
             "Built entirely with HTML5 and CSS3, it demonstrates high-performance visual storytelling techniques and complex keyframe animations without relying on JavaScript libraries.",
             "The design focuses on a dramatic user entrance, seamlessly transitioning the logo from a delicate traced outline to a bold, solid white fill."
         ],
-        href: "https://nimble-sable-72e976.netlify.app/",
+        href: "https://animate-svg-gamma.vercel.app/",
         spotlight: "/images/projects/animate-svg/animate-svg.PNG",
         buildWith: ["Css"],
         github: "https://github.com/Abdulrahman-Mohamad/animateSVG.git",
@@ -419,7 +419,7 @@ const myProjects = [
             "Visual polish is added via mask-image to create elegant fade-out effects at the edges, ensuring a clean integration into the page background.",
             "Interactive elements include a hover state that pauses the animation and applies a grayscale filter to non-focused items, highlighting the user's selection."
         ],
-        href: "https://genuine-gaufre-c85428.netlify.app/",
+        href: "https://auto-slider-fawn.vercel.app/",
         spotlight: "/images/projects/auto-slider/auto-slider.png",
         buildWith: ["Css"],
         github: "https://github.com/Abdulrahman-Mohamad/auto-slider.git",
@@ -448,7 +448,7 @@ const myProjects = [
             "The visual experience is enhanced with a modern, dark-themed UI styled with CSS3, featuring gradient text effects and a responsive grid background.",
             "Optimized for performance, the animation efficiently handles real-time rendering and window resizing events to ensure a smooth and responsive user experience across different screen sizes."
         ],
-        href: "https://lustrous-maamoul-886b94.netlify.app/",
+        href: "https://spider-animation.vercel.app/",
         spotlight: "/images/projects/spider-animation/spider-animation.png",
         buildWith: ["Css", "Java Script"],
         github: "https://github.com/Abdulrahman-Mohamad/spider-animation.git",
@@ -482,7 +482,7 @@ const myProjects = [
             "It features a pinned scroll section where the background stays fixed while the animation plays out, providing a cinematic 'enter-the-building' transition before releasing the user to the main content.",
             "Designed with a responsive layout using CSS Grid and Flexbox, ensuring the animation and content adapt seamlessly to different screen sizes."
         ],
-        href: "https://magenta-nasturtium-7fac3a.netlify.app/",
+        href: "https://hong-kong-rosy.vercel.app/",
         spotlight: "/images/projects/hong-kong/hong-kong.png",
         buildWith: ["Css", "Java Script"],
         github: "https://github.com/Abdulrahman-Mohamad/homg-kong.git",
