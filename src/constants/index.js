@@ -409,7 +409,6 @@ const myProjects = [
         ],
     },
     // Project 5 [Auto Slider]
-
     {
         id: 5,
         title: "Auto Slider",
@@ -424,6 +423,35 @@ const myProjects = [
         spotlight: "/images/projects/auto-slider/auto-slider.png",
         buildWith: ["Css"],
         github: "https://github.com/Abdulrahman-Mohamad/auto-slider.git",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
+    // Project 6 [Auto Slider]
+    {
+        id: 6,
+        title: "Spider Animation",
+        desc: "An interactive web animation that simulates a dynamic spider web effect using HTML5 Canvas and JavaScript. It features a network of particles that react to mouse movement, creating connections in real time to visualize proximity and interaction.",
+        subdesc: [
+            "The project utilizes the HTML5 Canvas API to render a field of randomized particles, each with unique properties like size, position, and color.",
+"It implements an interactive proximity detection algorithm in JavaScript that calculates the distance between the mouse cursor and each particle, drawing connecting lines when they are within a specific range.",
+"The visual experience is enhanced with a modern, dark-themed UI styled with CSS3, featuring gradient text effects and a responsive grid background.",
+"Optimized for performance, the animation efficiently handles real-time rendering and window resizing events to ensure a smooth and responsive user experience across different screen sizes."
+        ],
+        href: "https://lustrous-maamoul-886b94.netlify.app/",
+        spotlight: "/images/projects/spider-animation/spider-animation.png",
+        buildWith: ["Css","Java Script"],
+        github: "https://github.com/Abdulrahman-Mohamad/spider-animation.git",
         figmaurl: null,
         tags: [
             {
