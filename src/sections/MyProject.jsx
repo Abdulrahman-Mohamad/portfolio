@@ -4,14 +4,18 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useState, useMemo } from "react";
 import TitleHeader from "../components/TitleHeader";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const MyProject = () => {
     const containerRef = useRef(null);
     const [activeTab, setActiveTab] = useState("All");
-    const tabs = ["All", "Css", "Java Script","Type Script", "React", "Next", "Full Stack", "Other"];
+    const [isExpanded, setIsExpanded] = useState(false);
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+
+    const tabs = ["All", "Css", "Java Script", "Type Script", "React", "Next", "Full Stack", "Other"];
 
     const filteredProjects = useMemo(() => {
         if (activeTab === "All") return myProjects;
@@ -25,6 +29,18 @@ const MyProject = () => {
             return String(buildWith).toLowerCase().includes(activeTab.toLowerCase());
         });
     }, [activeTab]);
+
+    const displayedProjects = useMemo(() => {
+        if (isHomePage && !isExpanded && filteredProjects.length > 6) {
+            return filteredProjects.slice(0, 6);
+        }
+        return filteredProjects;
+    }, [filteredProjects, isHomePage, isExpanded]);
+
+    const handleTabChange = (tab) => {
+        setActiveTab(tab);
+        setIsExpanded(false);
+    };
 
     useGSAP(() => {
         // Refresh ScrollTrigger when filtered projects change to ensure correct layout
@@ -56,7 +72,7 @@ const MyProject = () => {
             }
         );
 
-    }, { scope: containerRef, dependencies: [filteredProjects] });
+    }, { scope: containerRef, dependencies: [displayedProjects] });
 
     return (
         <section id="work" className="section-padding" ref={containerRef}>
@@ -69,7 +85,7 @@ const MyProject = () => {
                 {tabs.map((tab) => (
                     <button
                         key={tab}
-                        onClick={() => setActiveTab(tab)}
+                        onClick={() => handleTabChange(tab)}
                         className={`px-6 py-2 rounded-full border transition-all duration-300 cursor-pointer ${activeTab === tab
                             ? "bg-white text-black border-white"
                             : "bg-transparent text-white-50 border-white/10 hover:border-white hover:text-white"
@@ -81,7 +97,7 @@ const MyProject = () => {
             </div>
 
             <div className="flex flex-col gap-8 md:flex-row pb-10 flex-wrap overflow-hidden mt-6">
-                {filteredProjects.map((project, index) => (
+                {displayedProjects.map((project, index) => (
                     <div
                         key={index}
                         className="project-card w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-6 relative overflow-hidden group transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]"
@@ -129,6 +145,17 @@ const MyProject = () => {
                     </div>
                 ))}
             </div>
+
+            {isHomePage && filteredProjects.length > 6 && (
+                <div className="flex justify-center mt-4">
+                    <button
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-300 border border-white/10 backdrop-blur-md cursor-pointer"
+                    >
+                        {isExpanded ? "See Less" : "See More"}
+                    </button>
+                </div>
+            )}
         </section>
     );
 };
