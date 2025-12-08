@@ -666,7 +666,50 @@ const myProjects = [
             }
         ],
     },
-
+    // Project 13 [Hong Kong]
+    {
+        id: 13,
+        title: "3js Scroll",
+        desc: "An immersive 3D scrolling experience powered by Three.js and GSAP. It features a high-quality 3D model of a \"Demon Bee\" that dynamically travels, rotates, and interacts with the user as they scroll through different sections of the website.",
+        subdesc: [
+            "The project integrates Three.js to render a fully animated 3D GLTF model directly in the browser, complete with lighting, textures, and skeletal animations.",
+            "It utilizes GSAP (GreenSock Animation Platform) to synchronize the 3D model's movement and rotation with the user's scroll position, creating a seamless narrative flow between sections.",
+            "The application implements a custom 'section-tracking' logic that detects the active viewport area and triggers specific 3D coordinates and rotation states for the model.",
+            "Designed with a responsive layout, the 3D canvas automatically resizes and adjusts the camera aspect ratio to ensure the visual experience remains consistent across all devices."
+        ],
+        href: "https://3js-animation-zeta.vercel.app/",
+        spotlight: "/images/projects/3js-scroll/3js-scroll.png",
+        buildWith: ["Css","Java Script"],
+        github: "https://github.com/Abdulrahman-Mohamad/3js-animation",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            },
+            {
+                id: 3,
+                name: "Java Script",
+                path: "/images/logos/tech/js.png",
+            },
+            {
+                id: 4,
+                name: "GSAP",
+                path: "/images/logos/tech/gsap.png",
+            },
+            {
+                id: 5,
+                name: "Three.js",
+                path: "/images/logos/tech/threejs.png",
+            },
+        ],
+    },
 ];
 
 export {
