@@ -444,13 +444,13 @@ const myProjects = [
         desc: "An interactive web animation that simulates a dynamic spider web effect using HTML5 Canvas and JavaScript. It features a network of particles that react to mouse movement, creating connections in real time to visualize proximity and interaction.",
         subdesc: [
             "The project utilizes the HTML5 Canvas API to render a field of randomized particles, each with unique properties like size, position, and color.",
-"It implements an interactive proximity detection algorithm in JavaScript that calculates the distance between the mouse cursor and each particle, drawing connecting lines when they are within a specific range.",
-"The visual experience is enhanced with a modern, dark-themed UI styled with CSS3, featuring gradient text effects and a responsive grid background.",
-"Optimized for performance, the animation efficiently handles real-time rendering and window resizing events to ensure a smooth and responsive user experience across different screen sizes."
+            "It implements an interactive proximity detection algorithm in JavaScript that calculates the distance between the mouse cursor and each particle, drawing connecting lines when they are within a specific range.",
+            "The visual experience is enhanced with a modern, dark-themed UI styled with CSS3, featuring gradient text effects and a responsive grid background.",
+            "Optimized for performance, the animation efficiently handles real-time rendering and window resizing events to ensure a smooth and responsive user experience across different screen sizes."
         ],
         href: "https://lustrous-maamoul-886b94.netlify.app/",
         spotlight: "/images/projects/spider-animation/spider-animation.png",
-        buildWith: ["Css","Java Script"],
+        buildWith: ["Css", "Java Script"],
         github: "https://github.com/Abdulrahman-Mohamad/spider-animation.git",
         figmaurl: null,
         tags: [
@@ -463,6 +463,40 @@ const myProjects = [
                 id: 2,
                 name: "Css",
                 path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
+    // Project 7 [Auto Slider]
+    {
+        id: 7,
+        title: "Hong Kong",
+        desc: "An immersive scrolling experience that uses GSAP ScrollTrigger to animate a detailed vector city illustration. As the user scrolls, the view zooms into the architecture, peeling away layers of the building to reveal the interior, creating a dynamic storytelling effect.",
+        subdesc: [
+            "Built with GSAP (GreenSock Animation Platform) and ScrollTrigger, it orchestrates a complex timeline of animations where SVG elements scale, translate, and fade based on the user's scroll position.",
+            "The project dynamically loads and manipulates an intricate SVG city model, allowing for high-quality, resolution-independent visuals that remain crisp at any zoom level.",
+            "It features a pinned scroll section where the background stays fixed while the animation plays out, providing a cinematic 'enter-the-building' transition before releasing the user to the main content.",
+            "Designed with a responsive layout using CSS Grid and Flexbox, ensuring the animation and content adapt seamlessly to different screen sizes."
+        ],
+        href: "https://magenta-nasturtium-7fac3a.netlify.app/",
+        spotlight: "/images/projects/hong-kong/hong-kong.png",
+        buildWith: ["Css", "Java Script"],
+        github: "https://github.com/Abdulrahman-Mohamad/homg-kong.git",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            },
+            {
+                id: 2,
+                name: "Java Script",
+                path: "/images/logos/tech/js.png",
             }
         ],
     },
