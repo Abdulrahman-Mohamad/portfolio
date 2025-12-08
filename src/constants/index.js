@@ -408,6 +408,36 @@ const myProjects = [
             }
         ],
     },
+    // Project 5 [Auto Slider]
+
+    {
+        id: 4,
+        title: "Auto Slider",
+        desc: "A seamless, infinite scrolling image slider built entirely with HTML and CSS, featuring bidirectional animation support. It creates a dynamic visual flow where images continuously loop across the screen, offering an interactive user experience with pause-on-hover functionality.",
+        subdesc: [
+            "The project utilizes advanced CSS variables (--width, --height, --quantity) to calculate animation delays and positions dynamically, allowing for a fully customizable and responsive layout.",
+            "It implements a smooth infinite loop using pure CSS keyframes (autoRun and reversePlay), enabling sliders to move in both forward and reverse directions without any JavaScript.",
+            "Visual polish is added via mask-image to create elegant fade-out effects at the edges, ensuring a clean integration into the page background.",
+            "Interactive elements include a hover state that pauses the animation and applies a grayscale filter to non-focused items, highlighting the user's selection."
+        ],
+        href: "https://genuine-gaufre-c85428.netlify.app/",
+        spotlight: "/images/projects/auto-slider/auto-slider.png",
+        buildWith: ["Css"],
+        github: "https://github.com/Abdulrahman-Mohamad/auto-slider.git",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
 ];
 
 export {
