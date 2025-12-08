@@ -579,6 +579,35 @@ const myProjects = [
             }
         ],
     },
+    // Project 10 [Hong Kong]
+    {
+        id: 10,
+        title: "Scroll Animation",
+        desc: "A visually engaging web design showcase that leverages modern CSS scroll-driven animations to create a dynamic and immersive storytelling experience. It features elements that rotate, fade in, and blur based on the user's scroll position, all implemented without a single line of JavaScript.",
+        subdesc: [
+            "The project utilizes the experimental CSS animation-timeline: view() property to synchronize animations directly with the viewport's scroll position, ensuring smooth, hardware-accelerated performance.",
+            "It features a variety of scroll-triggered effects, including autoRotate for spinning elements, autoShow for scale-and-fade entrances, and autoBlur for focus-shifting text transitions.",
+            "The layout is built with a responsive CSS Grid system that adapts complex multi-column structures into a streamlined vertical flow on mobile devices.",
+            "Typography plays a central role, using 'Libre Baskerville' and 'Odibee Sans' to create a bold, editorial aesthetic that complements the motion effects."
+        ],
+        href: "https://scroll-animation-navy.vercel.app/",
+        spotlight: "/images/projects/scroll-animation/scroll-animation.png",
+        buildWith: ["Css"],
+        github: "https://github.com/Abdulrahman-Mohamad/scroll-animation",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
 
 ];
 
