@@ -24,22 +24,22 @@ const navLinks = [
 
 // Words (Animated) in Hero Section
 const words = [
-    { text: "Ideas", imgPath: "/images/ideas.svg" },
-    { text: "Concepts", imgPath: "/images/concepts.svg" },
-    { text: "Designs", imgPath: "/images/designs.svg" },
-    { text: "Code", imgPath: "/images/code.svg" },
-    { text: "Ideas", imgPath: "/images/ideas.svg" },
-    { text: "Concepts", imgPath: "/images/concepts.svg" },
-    { text: "Designs", imgPath: "/images/designs.svg" },
-    { text: "Code", imgPath: "/images/code.svg" },
+    {text: "Ideas", imgPath: "/images/ideas.svg"},
+    {text: "Concepts", imgPath: "/images/concepts.svg"},
+    {text: "Designs", imgPath: "/images/designs.svg"},
+    {text: "Code", imgPath: "/images/code.svg"},
+    {text: "Ideas", imgPath: "/images/ideas.svg"},
+    {text: "Concepts", imgPath: "/images/concepts.svg"},
+    {text: "Designs", imgPath: "/images/designs.svg"},
+    {text: "Code", imgPath: "/images/code.svg"},
 ];
 
 // Counter Items
 const counterItems = [
-    { value: 6, suffix: "+", label: "Years of Experience" },
-    { value: 42, suffix: "+", label: "Satisfied Clients" },
-    { value: 45, suffix: "+", label: "Completed Projects" },
-    { value: 90, suffix: "%", label: "Client Retention Rate" },
+    {value: 6, suffix: "+", label: "Years of Experience"},
+    {value: 42, suffix: "+", label: "Satisfied Clients"},
+    {value: 45, suffix: "+", label: "Completed Projects"},
+    {value: 90, suffix: "%", label: "Client Retention Rate"},
 ];
 
 // Logo Icons List (Animated)
@@ -309,7 +309,7 @@ const myProjects = [
                 name: "zustand",
                 path: "/images/logos/tech/zustand.png",
             },
-            
+
         ],
     },
     // Project 2 [SPORTS HUB]
@@ -550,7 +550,36 @@ const myProjects = [
             }
         ],
     },
-    
+    // Project 9 [Hong Kong]
+    {
+        id: 9,
+        title: "INK Animation",
+        desc: "A visually captivating landing page effect that uses a dynamic ink spreading animation to reveal a background image. It demonstrates a creative use of CSS masking to create an organic, fluid transition that draws attention to the central content.",
+        subdesc: [
+            "The project utilizes the CSS mask-image property combined with a high-contrast GIF (ink_lv2.gif) to simulate an ink blot spreading across the screen, progressively revealing the underlying background.",
+            "It features a clean, centered typography layout that overlays the animation, ensuring the core message remains the focal point amidst the visual effects.",
+            "Built with pure HTML and CSS, it showcases how standard web technologies can be used to achieve cinematic, video-like masking effects without heavy JavaScript or canvas rendering.",
+            "The design is fully responsive, with the background and mask scaling to cover the viewport (background-size: cover), providing a consistent visual experience across different screen sizes."
+        ],
+        href: "https://ink-animation.vercel.app/",
+        spotlight: "/images/projects/ink-animation/ink-animation.png",
+        buildWith: ["Css"],
+        github: "https://github.com/Abdulrahman-Mohamad/ink-animation.git",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
+
 ];
 
 export {
