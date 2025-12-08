@@ -437,7 +437,7 @@ const myProjects = [
             }
         ],
     },
-    // Project 6 [Auto Slider]
+    // Project 6 [Spider Animation]
     {
         id: 6,
         title: "Spider Animation",
@@ -463,10 +463,15 @@ const myProjects = [
                 id: 2,
                 name: "Css",
                 path: "/images/logos/tech/css.png",
+            },
+            {
+                id: 3,
+                name: "Java Script",
+                path: "/images/logos/tech/js.png",
             }
         ],
     },
-    // Project 7 [Auto Slider]
+    // Project 7 [Hong Kong]
     {
         id: 7,
         title: "Hong Kong",
