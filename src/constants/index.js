@@ -608,6 +608,35 @@ const myProjects = [
             }
         ],
     },
+    // Project 11 [Hong Kong]
+    {
+        id: 11,
+        title: "Slide Animation",
+        desc: "A visually striking full-screen image slider that features a unique circular reveal transition. It combines bold typography with dynamic background manipulations to create a high-impact presentation for showcasing visual content.",
+        subdesc: [
+            "The project implements a sophisticated CSS-based transition where background images rotate and blur into focus, creating a seamless and energetic flow between slides.",
+            "It utilizes a custom JavaScript function to dynamically calculate the viewport diagonal (--diameter), ensuring the circular background elements perfectly cover the screen on any device size.",
+            "The design features a layered composition with a fixed foreground character overlay (model.png) that interacts with the changing background scenes, adding depth and dimensionality.",
+            "Typography is handled with 'Bebas Neue' for massive, impactful headlines that animate into view, synchronized with the slide transitions for a cohesive motion design experience."
+        ],
+        href: "https://slide-animation-gules.vercel.app/",
+        spotlight: "/images/projects/slide-animation/slide-animation.png",
+        buildWith: ["Css"],
+        github: "https://github.com/Abdulrahman-Mohamad/slide-animation",
+        figmaurl: null,
+        tags: [
+            {
+                id: 1,
+                name: "HTML",
+                path: "/images/logos/tech/html.png",
+            },
+            {
+                id: 2,
+                name: "Css",
+                path: "/images/logos/tech/css.png",
+            }
+        ],
+    },
 
 ];
 
