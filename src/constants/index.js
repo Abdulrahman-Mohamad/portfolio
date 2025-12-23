@@ -201,7 +201,7 @@ const testimonials = [
     {
         name: "MBITION",
         url: "https://mbition.io/",
-        review: "Working with AbdelRahman was fantastic. He developed Mercedes-Benz web interfaces, improving performance and user experience significantly. Highly recommend him for complex projects.",
+        review: "Working with AbdelRahman was fantastic. He developed Mercedes-Benz operating system, improving performance and user experience significantly. Highly recommend him for complex projects.",
         imgPath: "/images/mbition.png",
     },
     {
