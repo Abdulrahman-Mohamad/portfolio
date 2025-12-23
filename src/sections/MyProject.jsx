@@ -15,7 +15,7 @@ const MyProject = () => {
     const location = useLocation();
     const isHomePage = location.pathname === "/";
 
-    const tabs = ["All", "Css", "Java Script", "Type Script", "React", "Next", "Full Stack", "Other"];
+    const tabs = ["All", "Css", "Java Script", "Type Script", "React","React Native", "Next", "Full Stack", "Other"];
 
     const filteredProjects = useMemo(() => {
         if (activeTab === "All") return myProjects;

@@ -710,6 +710,54 @@ const myProjects = [
             },
         ],
     },
+    // Project 14 [Hong Kong]
+    {
+        id: 14,
+        title: "Movira",
+        desc: "A comprehensive movie exploration and tracking application that allows users to discover the latest films, view detailed information, and manage their personal watchlists with a premium mobile experience.",
+    subdesc: [
+        "Built with React Native and Expo to deliver a high-performance, cross-platform mobile experience with a consistent native feel on both iOS and Android.",
+        "Integrates the TMDB API for real-time movie data fetching, providing users with up-to-date information, ratings, and high-quality media content.",
+        "Utilizes Appwrite as a robust Backend-as-a-Service for secure user authentication, real-time database management, and cloud storage for user profiles.",
+        "Implements NativeWind for modern styling and React Native Reanimated for fluid UI transitions, creating a visually stunning and interactive user interface."
+    ],
+        href: null,
+        androidText:'Open this link on your Android device to download and install the app directly',
+        android:'https://expo.dev/artifacts/eas/5yCjjv1AUmnwBYwkT7UwEW.apk',
+        iosText:'Install Expo Go on your iOS device and use this link within the app to run the application.',
+        ios:'https://expo.dev/accounts/abdulrahman-mohamd/projects/movie-app/updates/2f6f3eda-f466-485e-8983-b6d6943779f6',
+        spotlight: "/images/projects/movira/movira.png",
+        buildWith: ["Type Script","React Native","Full Stack"],
+        github: "https://github.com/Abdulrahman-Mohamad/movie-app.git",
+        figmaurl: "https://www.figma.com/design/H6LFjZRD95lu2okdz1higu/Movira?node-id=4-2&t=ORDeh00qHspK3VhH-1",
+        tags: [
+            {
+            id: 1,
+            name: "React Native",
+            path: "/images/logos/tech/react.png",
+        },
+        {
+            id: 2,
+            name: "Expo",
+            path: "/images/logos/tech/expo.svg",
+        },
+        {
+            id: 3,
+            name: "Appwrite",
+            path: "/images/logos/tech/appwrite.png",
+        },
+        {
+            id: 4,
+            name: "TailwindCSS",
+            path: "/images/logos/tech/tailwindcss.png",
+        },
+        {
+            id: 5,
+            name: "TypeScript",
+            path: "/images/logos/tech/ts.png",
+        },
+        ],
+    },
 ];
 
 export {
